@@ -111,10 +111,10 @@ public class Drive {
         double error = aimAngle - robotAngle;
 
         if(error >= 2){
-            return 0.2 +0.8*(error/180)^2;
+            return 0.2 + 0.8*(error/180);
 
         }else if(error <= -2){
-            return -0.2 -0.8*(error/180)^2;
+            return -0.2 + 0.8*(error/180);
         }
 
         return 0;
